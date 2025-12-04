@@ -19,5 +19,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
+          
+      # Comment for 2nd PR
       - name: Copy website to S3
         run: aws s3 sync . s3://s3-inventory-app-website-edraque-maglaque-november252025 --exclude "*" --include "index.html"
