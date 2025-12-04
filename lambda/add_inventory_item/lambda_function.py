@@ -13,7 +13,7 @@ def lambda_handler(event, context):
             'body': json.dumps("Bad request. Please provide the data.")
         }
 
-    # DynamoDB setup
+    # DynamoDB setup, Comment for 2nd PR
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('Inventory')
 

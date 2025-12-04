@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     # Initialize a DynamoDB client
     dynamo_client = boto3.client('dynamodb')
 
-    # Name of the DynamoDB table
+    # Name of the DynamoDB table, Comment for 2nd PR
     table_name = 'Inventory'
 
     # Scan the table

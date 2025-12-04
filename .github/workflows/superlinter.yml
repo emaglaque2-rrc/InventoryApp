@@ -27,6 +27,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      # Comment for 2nd PR
       - name: Super-linter
         uses: super-linter/super-linter@2bdd90ed3262e023ac84bf8fe35dc480721fc1f2 # x-release-please-version
         env:

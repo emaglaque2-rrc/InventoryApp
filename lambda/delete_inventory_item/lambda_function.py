@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     dynamo_client = boto3.client('dynamodb')
     table_name = 'Inventory'
 
-    # Extract the '_id' from the path parameters
+    # Extract the '_id' from the path parameters, Comment for 2nd PR
     if 'pathParameters' not in event or 'id' not in event['pathParameters']:
         return {
             'statusCode': 400,

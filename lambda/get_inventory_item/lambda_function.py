@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     key_value = event['pathParameters']['id']
     location_id_value = event['queryStringParameters']['location_id']
 
-    # Prepare the key for DynamoDB
+    # Prepare the key for DynamoDB, Comment for 2nd PR
     key = {
         'id': {'S': key_value},
         'location_id': {'N': str(location_id_value)}
